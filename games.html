@@ -20,22 +20,49 @@
       color:cyan;
       font-size:60px;
       text-shadow:0 0 20px cyan;
-      margin-bottom:40px;
+      margin-bottom:50px;
+    }
+
+    .games{
+      display:flex;
+      justify-content:center;
+      gap:40px;
+      flex-wrap:wrap;
     }
 
     .box{
       background:#111;
-      width:300px;
-      margin:20px auto;
-      padding:30px;
+      width:320px;
       border:2px solid cyan;
       border-radius:20px;
+      overflow:hidden;
       box-shadow:0 0 20px cyan;
+      transition:0.3s;
+    }
+
+    .box:hover{
+      transform:translateY(-10px);
+      box-shadow:0 0 30px cyan;
+    }
+
+    .box img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+    }
+
+    .box h2{
+      color:cyan;
+      margin:20px 0 10px;
+    }
+
+    .box p{
+      padding:0 20px 20px;
     }
 
     a{
       display:inline-block;
-      margin-top:30px;
+      margin-top:40px;
       padding:15px 30px;
       background:cyan;
       color:black;
@@ -52,23 +79,31 @@
 
 <h1>GAME MENU</h1>
 
-<div class="box">
+<div class="games">
 
-  <h2>Counter Strike 2</h2>
+  <div class="box">
 
-  <p>
-    최고의 FPS 게임
-  </p>
+    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1200">
 
-</div>
+    <h2>Counter Strike 2</h2>
 
-<div class="box">
+    <p>
+      최고의 FPS 게임
+    </p>
 
-  <h2>Valorant</h2>
+  </div>
 
-  <p>
-    전략 슈팅 게임
-  </p>
+  <div class="box">
+
+    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1200">
+
+    <h2>Valorant</h2>
+
+    <p>
+      전략 슈팅 게임
+    </p>
+
+  </div>
 
 </div>
 
